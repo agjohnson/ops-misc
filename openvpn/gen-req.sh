@@ -18,7 +18,7 @@ generate_req () {
 # Initialize key and tarball
 init () {
     key=$1
-    tmp=`mktemp -d`
+    tmp=`mktemp -d -t openvpn.XXXX`
     
     # Get key
     if [ -n "$key" ]
