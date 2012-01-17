@@ -39,7 +39,7 @@ init () {
     generate_req ${tmp}/client.pem ${tmp}/client.csr
 
     # Tarball
-    tar zcf - -C "${tmp}" client.pem client.csr
+    tar -cf - -C "${tmp}" client.pem client.csr
     
     # Delete working path
     rm -rf $tmp
